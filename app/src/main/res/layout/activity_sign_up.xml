@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_5"
+        android:clipToPadding="false"
+        android:padding="@dimen/spacing_mlarge"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/fullname"
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edit_text_round_bg_white"
+                android:hint="Enter Full Name"
+                android:minHeight="45dp"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle" />
+
+            <EditText
+                android:id="@+id/age"
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/edit_text_round_bg_white"
+                android:hint="Enter age"
+                android:inputType="phone"
+                android:paddingLeft="@dimen/spacing_middle" />
+
+            <EditText
+                android:id="@+id/phonenum"
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/edit_text_round_bg_white"
+                android:hint="Enter phone number"
+                android:inputType="phone"
+                android:paddingLeft="@dimen/spacing_middle" />
+
+            <EditText
+                android:id="@+id/pincode"
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/edit_text_round_bg_white"
+                android:hint="Enter pincode"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle"
+                android:inputType="phone"/>
+
+            <EditText
+                android:id="@+id/city"
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/edit_text_round_bg_white"
+                android:hint="City"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle" />
+
+
+            <EditText
+                android:id="@+id/state"
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/edit_text_round_bg_white"
+                android:hint="State"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle" />
+
+            <EditText
+                android:id="@+id/country"
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/edit_text_round_bg_white"
+                android:hint="Country"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle" />
+
+
+            <EditText
+                android:id="@+id/address"
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/edit_text_round_bg_white"
+                android:gravity="start"
+                android:hint="Enter area"
+                android:inputType="textMultiLine"
+                android:maxHeight="100dp"
+                android:minHeight="80dp"
+                android:paddingLeft="@dimen/spacing_middle" />
+
+            <Button
+                android:id="@+id/bt_submit"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/btn_rect_green"
+                android:text="SUBMIT"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
